@@ -24,6 +24,7 @@ func main() {
 	authService := auth.NewService()
 
 	
+
 	userHandler := handler.NewUserHandler(userService,authService)
 	router := gin.Default()
 	api := router.Group("/api/v1")
